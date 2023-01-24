@@ -5,10 +5,6 @@ import 'package:iqra/view/pages/login_page.dart';
 
 import 'package:iqra/view/widgets/text_input_field.dart';
 
-
-
-
-
 class SignupScreen extends StatelessWidget {
   SignupScreen({Key? key}) : super(key: key);
 
@@ -112,11 +108,14 @@ class SignupScreen extends StatelessWidget {
                 ),
               ),
               child: InkWell(
-                onTap: () => Navigator.of(context).push(
+                onTap: () async{
+                  //SharedPrefernces
+                  Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (context) => HomeScreen(),
                     ),
-                  ),
+                  );
+                },
                 child: const Center(
                   child: Text(
                     'Register',

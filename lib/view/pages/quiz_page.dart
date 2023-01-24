@@ -8,7 +8,7 @@ class QuizScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text("Quiz will be added"),
+      child: Center(child: Text("Quiz will be added")),
     );
   }
 }
