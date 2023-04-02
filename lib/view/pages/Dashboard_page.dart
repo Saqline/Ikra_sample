@@ -1,14 +1,14 @@
 
 import 'package:flutter/material.dart';
 
-class ProfileScreen extends StatefulWidget {
+class DashboardScreen extends StatefulWidget {
   
 
   @override
-  State<ProfileScreen> createState() => _ProfileScreenState();
+  State<DashboardScreen> createState() => _DashboardScreenState();
 }
 
-class _ProfileScreenState extends State<ProfileScreen> {
+class _DashboardScreenState extends State<DashboardScreen> {
 
 
   @override
@@ -30,7 +30,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 Icon(Icons.more_horiz),
               ],
               title: Text(
-                'Name',
+                'Imran Nur Tanha',
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
@@ -44,7 +44,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     SizedBox(
                       child: Column(
                         children: [
-                          Row(
+                          const Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               
@@ -56,18 +56,18 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Column(
+                              const Column(
                                 children: [
                                   Text(
-                                    'Follwing',
-                                    style: const TextStyle(
+                                    'Orders',
+                                    style: TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
-                                  const SizedBox(height: 5),
-                                  const Text(
-                                    'Following',
+                                  SizedBox(height: 5),
+                                  Text(
+                                    '12',
                                     style: TextStyle(
                                       fontSize: 14,
                                     ),
@@ -82,18 +82,18 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   horizontal: 15,
                                 ),
                               ),
-                              Column(
+                              const Column(
                                 children: [
                                   Text(
-                                    'Followers',
-                                    style: const TextStyle(
+                                    'Revenue',
+                                    style: TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
-                                  const SizedBox(height: 5),
-                                  const Text(
-                                    'Followers',
+                                  SizedBox(height: 5),
+                                  Text(
+                                    '1200',
                                     style: TextStyle(
                                       fontSize: 14,
                                     ),
@@ -108,33 +108,40 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   horizontal: 15,
                                 ),
                               ),
-                              Column(
+                              const Column(
                                 children: [
                                   Text(
-                                    "Likes",
-                                    style: const TextStyle(
+                                    "Customer",
+                                    style: TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
-                                  const SizedBox(height: 5),
-                                  const Text(
-                                    'Likes',
+                                  SizedBox(height: 5),
+                                  Text(
+                                    '15',
                                     style: TextStyle(
                                       fontSize: 14,
                                     ),
                                   ),
                                 ],
                               ),
+                              
                             ],
                           ),
-                          const SizedBox(
-                            height: 15,
-                          ),
+                          // const SizedBox(
+                          //   height: 15,
+                          // ),
                           
-                          const SizedBox(
-                            height: 25,
+                          // const SizedBox(
+                          //   height: 25,
+                          // ),
+                          Container(
+                            child: Text('Recent Sales:',style: TextStyle(height: 20,fontWeight: FontWeight.bold),),
                           ),
+                          Container(
+                            child: Text('Best Selling Proiducts:',style: TextStyle(height: 20,fontWeight: FontWeight.bold),),
+                          )
                           
                        
                         ],

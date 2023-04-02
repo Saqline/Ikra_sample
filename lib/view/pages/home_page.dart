@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iqra/constants.dart';
+import 'package:iqra/models/constants.dart';
 
 
 
@@ -34,20 +34,13 @@ class _HomeScreenState extends State<HomeScreen> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search, size: 30),
-            label: 'Search',
+            icon: Icon(Icons.dashboard, size: 30),
+            label: 'Dashboard',
           ),
+          
           BottomNavigationBarItem(
-            icon: Icon(Icons.add,size: 30,),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.message, size: 30),
-            label: 'Messages',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person, size: 30),
-            label: 'Profile',
+            icon: Icon(Icons.settings, size: 30),
+            label: 'Settings',
           ),
         ],
       ),

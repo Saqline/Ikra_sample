@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iqra/constants.dart';
+import 'package:iqra/models/constants.dart';
 import 'package:iqra/view/pages/home_page.dart';
 import 'package:iqra/view/pages/login_page.dart';
 

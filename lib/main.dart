@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iqra/view/pages/home_page.dart';
 import 'package:iqra/view/pages/login_page.dart';
 
 
@@ -15,9 +16,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.grey,
       ),
-      home:  LoginScreen(),
+      home:  HomeScreen(),
     );
   }
 }
