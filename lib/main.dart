@@ -1,10 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:flutx/themes/app_theme_notifier.dart';
+import 'package:iqra/learning/views/full_app.dart';
+import 'package:iqra/learning/views/subscription_screen.dart';
+import 'package:iqra/quiz/quiz_customize_screen.dart';
+import 'package:iqra/quiz/quiz_question_type1_screen.dart';
+import 'package:iqra/theme/app_notifier.dart';
 import 'package:iqra/view/pages/home_page.dart';
 import 'package:iqra/view/pages/login_page.dart';
+import 'package:provider/provider.dart';
 
 
 void main() {
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider<AppNotifier>(
+    create: (context) => AppNotifier(),
+    child: ChangeNotifierProvider<FxAppThemeNotifier>(
+      create: (context) => FxAppThemeNotifier(),
+      child: MyApp(),
+    ),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -18,7 +31,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.grey,
       ),
-      home:  HomeScreen(),
+      home:  FullApp(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

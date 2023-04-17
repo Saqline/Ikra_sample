@@ -35,6 +35,29 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  provider:
+  flutx:
+    path: ../flutx
+  http:
+
+
+
+  #other
+  google_maps_flutter: ^2.2.5 
+  shimmer: ^2.0.0
+  url_launcher: ^6.1.10
+  intl: ^0.18.0
+  rive: ^0.10.3
+  flutter_secure_storage: ^8.0.0
+  connectivity_plus: ^3.0.3
+  network_tools: ^3.2.1
+  firebase_core: ^2.9.0
+  flutter_local_notifications: ^13.0.0
+  material_design_icons_flutter: ^6.0.7096
+  flutter_feather_icons: ^2.0.0+1
+  
+
+  syncfusion_flutter_calendar: ^21.1.37
   
 
 dev_dependencies:
@@ -50,6 +73,7 @@ dev_dependencies:
   get: ^4.6.5
   flutter_svg:
   shared_preferences:
+  table_calendar: ^3.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -64,7 +88,137 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+
+
+    #Map Styles
+    - assets/map/
+
+
+    #Profiles
+    - assets/images/profile/
+
+
+    # #Shopping
+    # - assets/images/apps/shopping/
+    # - assets/images/apps/shopping/product/
+    # - assets/images/apps/shopping/offer/
+    # - assets/images/apps/shopping/camera/
+    # - assets/images/apps/shopping/vector/
+
+    # #Shopping2
+    # - assets/images/apps/shopping2/icons/
+    # - assets/images/apps/shopping2/images/
+    #- lib/full_apps/shopping/data/
+
+
+    #Brand
+    - assets/brand/
+
+    #Hotel
+    - assets/images/apps/hotel/
+
+    #Places
+    - assets/images/place/
+
+    #Music
+    - assets/images/apps/music/
+
+    #Food
+    - assets/images/apps/food/
+
+    #estate
+    - assets/images/apps/estate/
+
+    #Course
+    - assets/images/apps/course/
+
+    #Chat
+    - assets/images/apps/chat/
+
+    #Social
+    - assets/images/apps/social/
+
+    #Other
+    - assets/images/all/
+
+    #Event
+    - assets/images/apps/event/
+
+
+    ###################---------------------- Custom Apps -------------------------#################
+
+    ##Grocery
+    - assets/images/apps/grocery/
+
+    # ##homemade
+    # - assets/images/apps/homemade/
+    # - assets/images/apps/homemade/products/
+    # - assets/images/apps/homemade/category/
+    # - assets/images/apps/homemade/shop/
+    #- lib/apps/homemade/data/
+
+    ##dating
+    - assets/images/apps/dating/
+
+    ##Muvi
+    - assets/images/apps/muvi/
+    #- lib/apps/muvi/data/
+
+    ##CustomApps
+    - assets/images/apps/cookify/
+    - assets/images/apps/grocery/
+    - assets/images/apps/medicare/
+
+    ##Learning  (Material Design 3)
+    - assets/images/apps/learning/images/
+    - assets/images/apps/learning/icons/
+    #- lib/m3/learning/data/
+
+    ##Cookify (Material Design 3)
+    #- lib/m3/cookify/data/
+
+    ##Estate (Material Design 3)
+    #- lib/m3/estate/data/
+
+    ##Dating (Material Design 3)
+    #- lib/apps/dating/data/
+
+    #Illustration
+    # - assets/illustration/food/
+    # - assets/illustration/shopping/
+    # - assets/illustration/hotel/
+    # - assets/illustration/music/
+
+    #Month backgrounds
+    - assets/images/month_background/
+
+    #Languages
+    - assets/lang/
+
+    #Icons
     - assets/icons/
+
+    #Rive Animations
+    - assets/animations/rive/
+
+    #Other
+    - assets/other/
+
+    ###################---------------------- Full Apps -------------------------#################
+
+    # Data
+
+    #NFT
+    - assets/images/full_apps/nft/icons/
+    - assets/images/full_apps/nft/images/
+
+    #Rental
+    - assets/images/full_apps/rental_service/images/
+    - assets/images/full_apps/rental_service/icons/
+
+    #Shopping Manager
+    - assets/images/full_apps/shopping/
+    - assets/images/full_apps/shopping/icons/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
